@@ -1,0 +1,23 @@
+1、输入git config --global user.name "XXX",这里"XXX"是注册的用户名
+
+2、输入git config --global user.email abc@163.com,这里的邮箱是注册时的邮箱
+
+3、上面两步在客户端配置你的git帐户，接着在本地建立自己的版本仓库。输入cd d:，切换到D盘目录。
+
+4、输入mkdir test，建立一个test目录，注意本地仓库名要和git中建立的仓库名一样
+
+5、输入cd test，进入test目录
+
+6、输入git init,初始化版本仓库
+
+7、输入touch README,建立一个README文件
+
+8、用文本编辑器打开README文件，随便输入一点文件，比如：hello git!
+
+9、输入git add README,将文件添加到上传队列
+
+10、输入git commit -m 'test commit'，缓存提交，引号中的是对本次提交的描述，必须填写，不能为空
+
+11、输入git remote add origin https://github.com/XXX/test.git,注意url格式，XXX是你注册时的昵称，test是你刚才建立的版本仓库
+
+12、输入git push origin master，将README文件上传到版本库。
